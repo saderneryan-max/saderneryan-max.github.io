@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Engagement pour un numérique responsable — Ryan Saderne." />
+  <title>Numérique responsable — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/numerique.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero" aria-label="En-tête page">
+      <div class="container page-hero__inner">
+        <p class="section-label">Mon engagement</p>
+        <h1 class="display-title">Numérique responsable</h1>
+        <div class="divider"></div>
+        <p class="lead">La création numérique a un impact réel sur l'environnement et la société. Cette page présente mes engagements et les pratiques appliquées dans ce portfolio.</p>
+      </div>
+    </section>
+
+    <section class="section num-main" aria-labelledby="num-heading">
+      <div class="container">
+        <h2 id="num-heading" class="sr-only">Contenu numérique responsable</h2>
+
+        <div class="num-grid">
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">🌱</div>
+            <h3 class="num-card__title">Éco-conception web</h3>
+            <p class="num-card__text">Ce site a été conçu en minimisant les ressources chargées : pas de framework CSS lourd, images optimisées et compressées, polices limitées à deux familles chargées via Google Fonts avec display=swap pour ne pas bloquer le rendu.</p>
+            <ul class="num-card__list">
+              <li>Images en format WebP ou JPEG optimisé</li>
+              <li>CSS organisé en fichiers séparés et minifiables</li>
+              <li>Chargement des librairies JS via CDN avec cache navigateur</li>
+              <li>Pas de tracking tiers ni de publicité</li>
+            </ul>
+          </article>
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">♿</div>
+            <h3 class="num-card__title">Accessibilité (WCAG)</h3>
+            <p class="num-card__text">Le site respecte les recommandations WCAG 2.1 niveau AA pour être accessible au plus grand nombre.</p>
+            <ul class="num-card__list">
+              <li>Contrastes suffisants entre texte et fond (ratio ≥ 4.5:1)</li>
+              <li>Navigation au clavier complète (focus visible)</li>
+              <li>Balises ARIA pour les éléments interactifs</li>
+              <li>Textes alternatifs sur toutes les images</li>
+              <li>Respect de la préférence prefers-reduced-motion</li>
+              <li>Structure HTML sémantique (main, nav, section, article…)</li>
+            </ul>
+          </article>
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">📱</div>
+            <h3 class="num-card__title">Responsive &amp; mobile first</h3>
+            <p class="num-card__text">Le site s'adapte à tous les appareils : mobile, tablette, desktop. Un site responsive bien conçu évite de créer plusieurs versions, ce qui réduit la consommation de ressources.</p>
+            <ul class="num-card__list">
+              <li>Design mobile-first avec media queries progressives</li>
+              <li>Unités relatives (rem, %, vw) plutôt qu'absolues</li>
+              <li>Menu burger pour les petits écrans</li>
+              <li>Images adaptées à la taille d'affichage</li>
+            </ul>
+          </article>
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">🔒</div>
+            <h3 class="num-card__title">Protection des données</h3>
+            <p class="num-card__text">Ce portfolio respecte la vie privée des visiteurs en collectant le minimum de données nécessaires.</p>
+            <ul class="num-card__list">
+              <li>Aucun cookie de tracking ou publicitaire</li>
+              <li>Formulaire de contact sans stockage de données tiers</li>
+              <li>Hébergement sur GitHub Pages (transparence de la chaîne)</li>
+              <li>Aucune revente de données personnelles</li>
+            </ul>
+          </article>
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">💡</div>
+            <h3 class="num-card__title">Impact des créations 3D</h3>
+            <p class="num-card__text">La modélisation 3D et le rendu sont énergivores. J'essaie d'en tenir compte dans mes pratiques.</p>
+            <ul class="num-card__list">
+              <li>Optimisation des meshes pour réduire le nombre de polygones</li>
+              <li>Utilisation d'EEVEE (rendu temps réel) plutôt que Cycles quand possible</li>
+              <li>Réutilisation et mutualisation des assets entre projets</li>
+              <li>Sensibilisation aux enjeux d'impact du rendu 3D en production</li>
+            </ul>
+          </article>
+
+          <article class="num-card">
+            <div class="num-card__icon" aria-hidden="true">📖</div>
+            <h3 class="num-card__title">Sources &amp; références</h3>
+            <p class="num-card__text">Ces engagements s'appuient sur les ressources suivantes :</p>
+            <ul class="num-card__list">
+              <li>Référentiel général d'amélioration de l'accessibilité (RGAA)</li>
+              <li>Web Content Accessibility Guidelines (WCAG 2.1)</li>
+              <li>GreenIT.fr — guide d'éco-conception web</li>
+              <li>Cours BUT Informatique Graphique — Numérique responsable</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

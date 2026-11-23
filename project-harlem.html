@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Harlem Renaissance — Jeu vidéo narratif 3D, projet de Ryan Saderne." />
+  <title>Harlem Renaissance — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/project.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <!-- ════ HERO PROJET ════ -->
+    <section class="project-hero" aria-label="En-tête projet">
+      <div class="container project-hero__inner">
+        <a href="projects.html" class="project-back">← Retour aux projets</a>
+        <div class="project-hero__tags">
+          <span class="badge">3D</span>
+          <span class="badge">Jeu vidéo</span>
+          <span class="badge">Unreal Engine</span>
+        </div>
+        <h1 class="display-title">Harlem Renaissance</h1>
+        <p class="project-hero__sub">Conception d'un environnement 3D immersif — Unreal Engine 5 · Équipe de 10</p>
+        <div class="project-hero__tools">
+          <span class="tag">Blender</span>
+          <span class="tag">Unreal Engine 5</span>
+          <span class="tag">SketchUp</span>
+          <span class="tag">Sketchfab</span>
+          <span class="tag">Discord</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONTENU PRINCIPAL ════ -->
+    <div class="container project-body">
+
+      <!-- Illustration principale + contexte -->
+      <div class="project-top">
+        <div class="project-main-img">
+          <div class="img-wrap project-main-media">
+            <img src="assets/img/harlem-thumb.jpg" alt="Vue principale du projet Harlem Renaissance"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>Rendu principal — Harlem Renaissance</div>'" />
+            <video src="assets/videos/harlem-preview.mp4" muted playsinline loop preload="none"
+                   aria-hidden="true" class="project-main-video"></video>
+          </div>
+        </div>
+        <div class="project-context">
+          <h2 class="project-section-title">Contexte &amp; sujet</h2>
+          <p class="project-text">Jeu narratif immersif se déroulant durant la Renaissance de Harlem aux États-Unis. Le joueur incarne un jeune Afro-Américain dont les choix influencent le scénario autour du jazz et des tensions sociales.</p>
+          <p class="project-text">Projet réalisé en équipe de 10 personnes dans le cadre du BUT Informatique Graphique — 1ère année.</p>
+        </div>
+      </div>
+
+      <!-- Objectifs + Missions -->
+      <div class="project-two-col">
+        <div class="project-block">
+          <h2 class="project-section-title">Objectifs visés</h2>
+          <ul class="project-list">
+            <li>Environnement 3D réaliste et immersif</li>
+            <li>Narration interactive à choix multiples</li>
+            <li>Représentation fidèle de Harlem</li>
+            <li>Workflow de production en équipe</li>
+            <li>Assets optimisés pour Unreal Engine</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h2 class="project-section-title">Mes missions</h2>
+          <ul class="project-list">
+            <li>Leader modélisation 3D et level design</li>
+            <li>Répartition des tâches et des assets</li>
+            <li>Création des plans techniques des niveaux</li>
+            <li>Conception de la map générale</li>
+            <li>Cohérence architecturale et historique</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Timeline étapes -->
+      <div class="project-block">
+        <h2 class="project-section-title">Étapes du projet</h2>
+        <ol class="project-timeline">
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Préproduction</span>
+            <span class="project-timeline__desc">Recherche historique, scénario, premiers croquis</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Conception</span>
+            <span class="project-timeline__desc">Plans des bâtiments, organisation des rues, dimensions</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Modélisation</span>
+            <span class="project-timeline__desc">Bâtiments, assets, personnage principal</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Intégration UE5</span>
+            <span class="project-timeline__desc">Import assets, éclairage, collisions, ambiance</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Tests &amp; ajustements</span>
+            <span class="project-timeline__desc">Proportions, performances, visuel final</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Galerie -->
+      <div class="project-block">
+        <h2 class="project-section-title">Illustrations</h2>
+        <div class="project-gallery">
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/harlem-perso.jpg" alt="Modélisation 3D du personnage principal sous Blender"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Personnage principal</div>'" />
+            </div>
+            <figcaption>Modélisation 3D du personnage principal (Blender, T-pose)</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/harlem-plan.jpg" alt="Plan technique de l'architecture du niveau"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Plan architectural</div>'" />
+            </div>
+            <figcaption>Plan technique de l'architecture du niveau</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/harlem-batiment.jpg" alt="Modélisation d'un bâtiment historique SketchUp"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Bâtiment historique</div>'" />
+            </div>
+            <figcaption>Modélisation d'un bâtiment historique de Harlem (SketchUp)</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/harlem-discord.jpg" alt="Organisation de l'équipe sur Discord"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Organisation équipe Discord</div>'" />
+            </div>
+            <figcaption>Organisation de l'équipe via Discord — répartition des rôles</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div class="project-skills">
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Compétences techniques</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Modélisation 3D</span>
+            <span class="badge">Architecture virtuelle</span>
+            <span class="badge">Level design</span>
+            <span class="badge">Optimisation meshes</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Transversales &amp; humaines</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Leadership</span>
+            <span class="badge">Travail en équipe</span>
+            <span class="badge">Gestion de projet</span>
+            <span class="badge">Rigueur</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Outils utilisés</h3>
+          <div class="project-skills__tags">
+            <span class="tag">Blender</span>
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">SketchUp</span>
+            <span class="tag">Sketchfab</span>
+            <span class="tag">Discord</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ressources académiques -->
+      <div class="project-block project-academic">
+        <h2 class="project-section-title">Compétences académiques validées</h2>
+        <p class="project-text">Gestion de projet numérique · Modélisation 3D · Création d'environnements virtuels · Travail collaboratif · Communication numérique · Gestion de production</p>
+      </div>
+
+      <!-- Conclusion + CTA -->
+      <div class="project-footer">
+        <div class="project-conclusion">
+          <h2 class="project-section-title">Conclusion réflexive</h2>
+          <p class="project-text project-text--italic">Ce projet m'a permis de développer mes compétences en modélisation 3D, gestion d'équipe et organisation de production dans un contexte proche d'une véritable production de jeux vidéo. J'ai appris à coordonner plusieurs personnes autour d'une direction artistique commune tout en respectant des contraintes techniques liées à Unreal Engine.</p>
+        </div>
+        <div class="project-nav">
+          <a href="projects.html" class="btn btn--outline">← Tous les projets</a>
+          <a href="project-courtmetrage.html" class="btn btn--primary">Projet suivant →</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

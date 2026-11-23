@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="La Maison Hantée &amp; la Mystery Machine — Animation 3D Scooby-Doo, book de Ryan Saderne." />
+  <title>La Maison Hantée — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/project.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link is-active">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <!-- ════ HERO PROJET ════ -->
+    <section class="project-hero" aria-label="En-tête projet">
+      <div class="container project-hero__inner">
+        <a href="book.html" class="project-back">← Retour au book 3D</a>
+        <div class="project-hero__tags">
+          <span class="badge">Animation 3D</span>
+          <span class="badge">Book BUT2</span>
+          <span class="badge">Cell shading</span>
+        </div>
+        <h1 class="display-title">La Maison Hantée<br />&amp; la Mystery Machine</h1>
+        <p class="project-hero__sub">Animation 3D — générique Scooby-Doo réimaginé · Blender EEVEE · Cell shading</p>
+        <div class="project-hero__tools">
+          <span class="tag">Blender</span>
+          <span class="tag">EEVEE</span>
+          <span class="tag">Cell shading</span>
+          <span class="tag">DaVinci Resolve</span>
+          <span class="tag">Dessin</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONTENU PRINCIPAL ════ -->
+    <div class="container project-body">
+
+      <!-- Illustration principale + contexte -->
+      <div class="project-top">
+        <div class="project-main-img">
+          <div class="img-wrap project-main-media">
+            <img src="assets/img/maison-hantee-main.jpg" alt="La Maison Hantée — rendu principal Blender"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>La Maison Hantée — rendu principal</div>'" />
+            <video src="assets/videos/maison-hantee-preview.mp4" muted playsinline loop preload="none"
+                   aria-hidden="true" class="project-main-video"></video>
+          </div>
+        </div>
+        <div class="project-context">
+          <h2 class="project-section-title">Concept &amp; inspiration</h2>
+          <p class="project-text">Pièce maîtresse de mon book d'animation : une scène animée inspirée de l'ancien générique de Scooby-Doo. La Mystery Machine fonce dans la nuit, phares allumés, s'éloignant d'une maison hantée sur fond d'atmosphère nocturne et mystérieuse.</p>
+          <p class="project-text">Le style cell shading 3D (Blender EEVEE) est au cœur du projet — un rendu qui évoque l'animation cartoon tout en exploitant la profondeur et les lumières propres à la 3D temps réel.</p>
+        </div>
+      </div>
+
+      <!-- Objectifs + Missions -->
+      <div class="project-two-col">
+        <div class="project-block">
+          <h2 class="project-section-title">Éléments de la scène</h2>
+          <ul class="project-list">
+            <li>Maison hantée (architecture gothique exagérée)</li>
+            <li>Mystery Machine — modélisation fidèle</li>
+            <li>Chauves-souris s'envolant de la maison</li>
+            <li>Arbre tordu aux branches noires</li>
+            <li>Végétation fantastique (buissons, herbes folles)</li>
+            <li>Animation de caméra sur le décor</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h2 class="project-section-title">Défis techniques</h2>
+          <ul class="project-list">
+            <li>Cell shading EEVEE avec contours noirs (Freestyle)</li>
+            <li>Éclairage nocturne dramatique (phares, lune)</li>
+            <li>Rigging et animation de la voiture en mouvement</li>
+            <li>Animation des chauves-souris (vol organique)</li>
+            <li>Mouvement de caméra cinématographique</li>
+            <li>Post-production DaVinci Resolve</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Timeline -->
+      <div class="project-block">
+        <h2 class="project-section-title">Étapes de création</h2>
+        <ol class="project-timeline">
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Storyboard</span>
+            <span class="project-timeline__desc">Croquis de la scène, angles de caméra, timing de l'animation</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Modélisation</span>
+            <span class="project-timeline__desc">Maison hantée, Mystery Machine, décor, chauves-souris</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Matériaux &amp; cell shading</span>
+            <span class="project-timeline__desc">Setup EEVEE, Freestyle, palette couleurs cartoon</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Éclairage</span>
+            <span class="project-timeline__desc">Atmosphère nocturne, phares de la Mystery Machine, lune</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Animation</span>
+            <span class="project-timeline__desc">Voiture, chauves-souris, caméra, végétation</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Rendu &amp; montage</span>
+            <span class="project-timeline__desc">Export Blender, étalonnage DaVinci Resolve</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Galerie -->
+      <div class="project-block">
+        <h2 class="project-section-title">Galerie du projet</h2>
+        <div class="project-gallery">
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/maison-hantee-storyboard.jpg" alt="Storyboard de la scène"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Storyboard</div>'" />
+            </div>
+            <figcaption>Storyboard de la scène animée</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/maison-hantee-modelisation.jpg" alt="Modélisation Blender"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Modélisation Blender</div>'" />
+            </div>
+            <figcaption>Modélisation de la maison hantée dans Blender</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/mystery-machine.jpg" alt="Mystery Machine modélisée"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Mystery Machine</div>'" />
+            </div>
+            <figcaption>La Mystery Machine — cell shading EEVEE</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/maison-hantee-nuit.jpg" alt="Rendu nocturne final"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Rendu nocturne</div>'" />
+            </div>
+            <figcaption>Rendu final — éclairage nocturne dramatique</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Vidéo rendu (si disponible) -->
+      <div class="project-block">
+        <h2 class="project-section-title">Animation finale</h2>
+        <div class="img-wrap" style="aspect-ratio:16/9;background:var(--bg-card);border-radius:var(--radius-lg);display:flex;align-items:center;justify-content:center;">
+          <video controls style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);"
+                 src="assets/videos/maison-hantee-final.mp4"
+                 poster="assets/img/maison-hantee-main.jpg">
+            <div style="padding:2rem;text-align:center;color:var(--text-muted);">
+              Placer la vidéo finale dans assets/videos/maison-hantee-final.mp4
+            </div>
+          </video>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div class="project-skills">
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Animation 3D</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Rigging voiture</span>
+            <span class="badge">Animation caméra</span>
+            <span class="badge">Vol organique</span>
+            <span class="badge">Timing cartoon</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Rendu &amp; shading</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Cell shading</span>
+            <span class="badge">Freestyle</span>
+            <span class="badge">EEVEE</span>
+            <span class="badge">Éclairage 3D</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Outils</h3>
+          <div class="project-skills__tags">
+            <span class="tag">Blender</span>
+            <span class="tag">DaVinci Resolve</span>
+            <span class="tag">Dessin traditionnel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contexte académique -->
+      <div class="project-block project-academic">
+        <h2 class="project-section-title">Pièce maîtresse du book d'animation</h2>
+        <p class="project-text">Ce projet est la pièce principale de mon book d'animation BUT2. Il démontre ma capacité à conduire un projet d'animation 3D de bout en bout — du storyboard au rendu final — en maîtrisant les spécificités du style cartoon en 3D temps réel.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="project-footer">
+        <div class="project-conclusion">
+          <h2 class="project-section-title">Ce projet m'a appris</h2>
+          <p class="project-text project-text--italic">La Maison Hantée m'a permis de combiner toutes les compétences acquises en BUT : modélisation, animation, shading, éclairage et montage — dans un projet personnel fort en direction artistique. Le style cell shading ouvre des perspectives directes vers les studios de jeux indépendants et les studios d'animation.</p>
+        </div>
+        <div class="project-nav">
+          <a href="book.html" class="btn btn--outline">← Retour au book</a>
+          <a href="projects.html" class="btn btn--primary">Voir tous les projets →</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

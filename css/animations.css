@@ -1,0 +1,138 @@
+/* ============================================================
+   ANIMATIONS.CSS — Keyframes CSS — Ryan Saderne Portfolio
+   ============================================================ */
+
+/* Apparition douce */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Montée depuis le bas */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glissement depuis la gauche */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Glissement depuis la droite */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale depuis 0 */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Pulse de l'anneau du curseur */
+@keyframes ringPulse {
+  0%   { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+  50%  { transform: translate(-50%, -50%) scale(1.3); opacity: 0.15; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+}
+
+/* Grain de texte qui apparaît lettre par lettre (utilisé en hero) */
+@keyframes blurReveal {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+/* Ligne qui se dessine */
+@keyframes drawLine {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+/* Glow pulsant sur un élément */
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(123, 111, 212, 0.2); }
+  50%       { box-shadow: 0 0 32px rgba(123, 111, 212, 0.5); }
+}
+
+/* Flottement léger (pour éléments décoratifs) */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+
+/* Rotation lente (background décoratif) */
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* Scan line hero */
+@keyframes scanLine {
+  0%   { top: -2px; opacity: 0.6; }
+  100% { top: 100%; opacity: 0; }
+}
+
+/* ── Classes utilitaires d'animation ── */
+
+.anim-fade-in {
+  animation: fadeIn var(--dur-slow) var(--ease-out) both;
+}
+
+.anim-slide-up {
+  animation: slideUp var(--dur-slow) var(--ease-out) both;
+}
+
+.anim-scale-in {
+  animation: scaleIn var(--dur-slow) var(--ease-spring) both;
+}
+
+.anim-glow {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+.anim-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Délais en cascade pour listes */
+.anim-delay-1 { animation-delay: 100ms; }
+.anim-delay-2 { animation-delay: 200ms; }
+.anim-delay-3 { animation-delay: 300ms; }
+.anim-delay-4 { animation-delay: 400ms; }
+.anim-delay-5 { animation-delay: 500ms; }
+.anim-delay-6 { animation-delay: 600ms; }

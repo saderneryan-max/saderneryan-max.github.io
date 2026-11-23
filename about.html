@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="À propos de Ryan Saderne — étudiant en BUT Informatique Graphique, animateur 3D et développeur créatif." />
+  <title>À propos — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/about.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link is-active">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <!-- ════ HERO PAGE ════ -->
+    <section class="page-hero" aria-label="En-tête de page">
+      <div class="container page-hero__inner">
+        <p class="section-label">Qui suis-je</p>
+        <h1 class="display-title">À propos</h1>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <!-- ════ PRÉSENTATION ════ -->
+    <section class="section about-intro" aria-labelledby="intro-heading">
+      <div class="container about-intro__grid">
+        <div class="about-intro__photo">
+          <div class="about-photo-wrap">
+            <img src="assets/img/photo-profil.jpg" alt="Ryan Saderne"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="about-photo-placeholder">RS</div>
+          </div>
+          <div class="about-intro__socials">
+            <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn</a>
+            <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="btn btn--outline">ArtStation</a>
+          </div>
+        </div>
+
+        <div class="about-intro__text">
+          <h2 id="intro-heading" class="display-title--sm">Ryan Saderne</h2>
+          <p class="about-intro__subtitle">Étudiant BUT Informatique Graphique · IUT Clermont Auvergne, Le Puy-en-Velay</p>
+          <div class="divider"></div>
+          <p class="lead">
+            Passionné depuis toujours par le dessin, l'art et la création numérique, je me suis naturellement orienté vers l'animation 3D et le jeu vidéo. Ma formation en BUT Informatique Graphique me permet de combiner créativité artistique et compétences techniques.
+          </p>
+          <p class="about-intro__body">
+            Que ce soit modéliser un environnement immersif sous Blender, animer une scène cinématographique dans Unreal Engine 5 ou concevoir une interface web, j'aime explorer tous les aspects de la création numérique. Le dessin reste ma base — c'est là que naissent mes idées avant d'être transposées en 3D ou en code.
+          </p>
+          <p class="about-intro__body">
+            Je cherche à développer un profil polyvalent, à la croisée de l'animation, du jeu vidéo et du web design, pour pouvoir contribuer à des projets créatifs ambitieux.
+          </p>
+          <div class="about-intro__langs">
+            <span class="badge">Français — Natif</span>
+            <span class="badge">Anglais — B2</span>
+            <span class="badge">Italien — B1</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ MON PARCOURS ════ -->
+    <section class="section about-timeline" aria-labelledby="timeline-heading">
+      <div class="container">
+        <p class="section-label">Parcours</p>
+        <h2 id="timeline-heading" class="display-title--sm">Mon chemin</h2>
+        <div class="divider"></div>
+
+        <ol class="timeline" role="list">
+          <li class="timeline__item">
+            <div class="timeline__date">2026 — Présent</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">BUT Informatique Graphique — 2ème année</h3>
+              <p class="timeline__place">IUT Clermont Auvergne, Le Puy-en-Velay</p>
+              <p class="timeline__desc">Approfondissement de la modélisation 3D, animation, développement web et gestion de projet numérique. Stage en entreprise prévu dans le domaine de l'animation ou du jeu vidéo.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__date">2025 — 2026</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">BUT Informatique Graphique — 1ère année</h3>
+              <p class="timeline__place">IUT Clermont Auvergne, Le Puy-en-Velay</p>
+              <p class="timeline__desc">Découverte de la modélisation 3D (Blender, SketchUp), développement web (HTML, CSS, JS, PHP), et gestion de projets numériques. Réalisation de 3 projets majeurs : jeu vidéo 3D, court métrage UE5, réseau social STRYVE.</p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__date">2025</div>
+            <div class="timeline__content">
+              <h3 class="timeline__title">Baccalauréat </h3>
+              <p class="timeline__place">Lycée Charle et Adrien duPuy</p>
+              <p class="timeline__desc">Obtention du baccalauréat, avec un attrait fort pour les matières artistiques et techniques.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ════ PPP ════ -->
+    <section class="section about-ppp" aria-labelledby="ppp-heading">
+      <div class="container">
+        <p class="section-label">Projet Personnel et Professionnel</p>
+        <h2 id="ppp-heading" class="display-title--sm">Où je me projette</h2>
+        <div class="divider"></div>
+
+        <div class="ppp-grid">
+          <div class="ppp-card ppp-card--main">
+            <div class="ppp-card__icon" aria-hidden="true">🎬</div>
+            <h3 class="ppp-card__title">Plan A — École d'animation</h3>
+            <p class="ppp-card__text">
+              Mon ambition principale est de rejoindre une école d'animation spécialisée après le BUT — ESMA, ArtFX ou équivalent — pour me perfectionner dans les techniques d'animation 3D de haut niveau et travailler sur des productions professionnelles (films d'animation, jeux AAA).
+            </p>
+          </div>
+          <div class="ppp-card">
+            <div class="ppp-card__icon" aria-hidden="true">🎮</div>
+            <h3 class="ppp-card__title">Plan B — Studio jeu vidéo</h3>
+            <p class="ppp-card__text">
+              Intégrer un studio de jeux vidéo indépendant en tant qu'animateur 3D ou artiste technique. La combinaison de mes compétences 3D et développement web me permettrait de contribuer à des productions créatives complètes.
+            </p>
+          </div>
+          <div class="ppp-card">
+            <div class="ppp-card__icon" aria-hidden="true">🖥️</div>
+            <h3 class="ppp-card__title">Profil polyvalent</h3>
+            <p class="ppp-card__text">
+              Web design et infographie représentent une voie complémentaire — concevoir des expériences visuelles fortes, à la croisée du motion design, de l'UI créatif et de la communication visuelle.
+            </p>
+          </div>
+        </div>
+
+        <div class="ppp-quote">
+          <blockquote>
+            "Je veux construire un profil où la technique est au service de la créativité — pas l'inverse."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

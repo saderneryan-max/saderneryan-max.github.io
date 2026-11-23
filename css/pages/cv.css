@@ -1,0 +1,191 @@
+/* ============================================================
+   CV.CSS — Page CV — Ryan Saderne Portfolio
+   ============================================================ */
+
+.page-hero {
+  padding-top: calc(var(--nav-h) + var(--space-2xl));
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+.cv-hero__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.cv-hero__subtitle {
+  font-size: var(--size-base);
+  color: var(--text-muted);
+  margin-top: var(--space-sm);
+}
+
+.cv-download-btn {
+  flex-shrink: 0;
+  margin-top: var(--space-sm);
+}
+
+.cv-download {
+  margin-top: var(--space-lg);
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.cv-col--left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  position: sticky;
+  top: calc(var(--nav-h) + var(--space-md));
+}
+
+.cv-col--right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.cv-block__title {
+  font-family: var(--font-display);
+  font-size: var(--size-lg);
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border);
+}
+
+.cv-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.cv-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.cv-info-label {
+  font-size: var(--size-xs);
+  color: var(--purple-light);
+  letter-spacing: 0.08em;
+  font-weight: 500;
+}
+
+.cv-info-item span:last-child,
+.cv-info-item a {
+  font-size: var(--size-sm);
+  color: var(--text);
+}
+
+.cv-info-link {
+  color: var(--text);
+  transition: color var(--dur-base) var(--ease);
+}
+
+.cv-info-link:hover {
+  color: var(--purple-light);
+}
+
+.cv-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* Timeline CV */
+.cv-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding-left: var(--space-lg);
+  border-left: 1px solid var(--border);
+}
+
+.cv-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-md);
+}
+
+.cv-entry::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-lg));
+  top: 6px;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--purple);
+  border: 2px solid var(--bg);
+  transform: translateX(-3px);
+}
+
+.cv-entry__date {
+  font-size: var(--size-xs);
+  color: var(--purple-light);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding-top: 3px;
+}
+
+.cv-entry__title {
+  font-size: var(--size-base);
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: var(--space-xs);
+}
+
+.cv-entry__place {
+  font-size: var(--size-sm);
+  color: var(--purple-light);
+  margin-bottom: var(--space-xs);
+}
+
+.cv-entry__desc {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+.cv-bottom {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .cv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-col--left {
+    position: static;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+}

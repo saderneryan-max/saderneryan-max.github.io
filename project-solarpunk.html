@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Le Potager Solarpunk — Jeu de simulation/gestion cozy, projet solo de Ryan Saderne." />
+  <title>Le Potager Solarpunk — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/project.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <!-- ════ HERO PROJET ════ -->
+    <section class="project-hero" aria-label="En-tête projet">
+      <div class="container project-hero__inner">
+        <a href="projects.html" class="project-back">← Retour aux projets</a>
+        <div class="project-hero__tags">
+          <span class="badge">Jeu vidéo</span>
+          <span class="badge">Simulation / Gestion</span>
+          <span class="badge badge--done">✓ Terminé</span>
+          <span class="badge">itch.io</span>
+        </div>
+        <h1 class="display-title">Le Potager Solarpunk</h1>
+        <p class="project-hero__sub">Projet de synthèse individuel, BUT2 · Unity 6.3 (URP) · Navigateur &amp; Windows · 2 semaines</p>
+        <div class="project-hero__tools">
+          <span class="tag">Unity 6.3</span>
+          <span class="tag">C#</span>
+          <span class="tag">Input System</span>
+          <span class="tag">TextMeshPro</span>
+          <span class="tag">WebGL</span>
+          <span class="tag">Git / GitHub</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CONTENU PRINCIPAL ════ -->
+    <div class="container project-body">
+
+      <!-- Illustration principale + contexte -->
+      <div class="project-top">
+        <div class="project-main-img">
+          <div class="img-wrap project-main-media" id="mainMedia">
+            <img src="assets/img/solarpunk-thumb.jpg" alt="Le Potager Solarpunk — capture d'écran principale"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>Le Potager Solarpunk</div>'" />
+            <video src="assets/videos/solarpunk-preview.mp4" muted playsinline loop preload="none"
+                   aria-hidden="true" class="project-main-video"></video>
+          </div>
+        </div>
+        <div class="project-context">
+          <h2 class="project-section-title">Contexte &amp; sujet</h2>
+          <p class="project-text">Aux commandes d'un drone horticole alimenté au soleil, le joueur survole un potager solarpunk. Il plante, arrose et récolte des carottes, tournesols et potirons, revend ses récoltes au marché d'une base sur pilotis, et doit livrer une commande de 15 récoltes le plus vite possible.</p>
+          <p class="project-text">Projet de synthèse individuel sur 2 semaines (28 octobre – 13 novembre 2026), IUT Informatique Graphique — 2ème année.</p>
+          <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary" style="margin-top:var(--space-md);display:inline-block;">
+            Jouer sur itch.io ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Objectifs + Mon rôle -->
+      <div class="project-two-col">
+        <div class="project-block">
+          <h2 class="project-section-title">Objectifs visés</h2>
+          <ul class="project-list">
+            <li>Concevoir une boucle de jeu complète et équilibrée en solo</li>
+            <li>Implémenter une économie simple (qualité Bronze/Argent/Or, marché)</li>
+            <li>Gérer la difficulté croissante sans rendre la partie injouable</li>
+            <li>Publier un build WebGL jouable directement dans le navigateur</li>
+            <li>Rendre le jeu accessible aussi bien clavier/souris que manette</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h2 class="project-section-title">Mon rôle</h2>
+          <ul class="project-list">
+            <li>Game design complet : règles, économie, commandes, scoring</li>
+            <li>Développement C# — tous les scripts réalisés seul</li>
+            <li>Intégration Unity : terrain, prefabs, animations, UI, audio</li>
+            <li>Level design : zones du potager, base solarpunk sur pilotis</li>
+            <li>Publication et paramétrage de la page itch.io</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Timeline étapes -->
+      <div class="project-block">
+        <h2 class="project-section-title">Étapes du projet</h2>
+        <ol class="project-timeline">
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Game design</span>
+            <span class="project-timeline__desc">Boucle, économie, commandes, scoring, règles de défaite</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Architecture</span>
+            <span class="project-timeline__desc">Scripts C#, ScriptableObjects, Prefab Variants, héritage</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Level design</span>
+            <span class="project-timeline__desc">Terrain sculpté, zones de culture, base sur pilotis, mares</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">UI &amp; audio</span>
+            <span class="project-timeline__desc">HUD complet, inventaire, textes flottants, playlist</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Build &amp; publication</span>
+            <span class="project-timeline__desc">Optimisation WebGL, page itch.io, tests finaux</span>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Galerie -->
+      <div class="project-block">
+        <h2 class="project-section-title">Captures d'écran</h2>
+        <div class="project-gallery">
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/solarpunk-titre.jpg" alt="Écran titre Le Potager Solarpunk"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Écran titre</div>'" />
+            </div>
+            <figcaption>Écran titre — caméra orbitale au lever du soleil</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/solarpunk-jeu.jpg" alt="Gameplay en cours"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Gameplay</div>'" />
+            </div>
+            <figcaption>Jeu en cours — drone, HUD complet, potager</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/solarpunk-marche.jpg" alt="Marché de la base solarpunk"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Marché</div>'" />
+            </div>
+            <figcaption>Base sur pilotis — marché et caisse de livraison</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/solarpunk-fin.jpg" alt="Écran de fin"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Écran de fin</div>'" />
+            </div>
+            <figcaption>Écran de fin au coucher du soleil</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Compétences -->
+      <div class="project-skills">
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Compétences techniques</h3>
+          <div class="project-skills__tags">
+            <span class="badge">C# / Unity</span>
+            <span class="badge">POO (héritage, événements)</span>
+            <span class="badge">ScriptableObjects</span>
+            <span class="badge">Coroutines</span>
+            <span class="badge">Build WebGL</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Game design</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Équilibrage</span>
+            <span class="badge">Prévention softlock</span>
+            <span class="badge">UI/UX multi-dispositif</span>
+            <span class="badge">Input System</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Outils utilisés</h3>
+          <div class="project-skills__tags">
+            <span class="tag">Unity 6.3 (URP)</span>
+            <span class="tag">TextMeshPro</span>
+            <span class="tag">Blender (IA)</span>
+            <span class="tag">Git / GitHub</span>
+            <span class="tag">itch.io</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compétences académiques -->
+      <div class="project-block project-academic">
+        <h2 class="project-section-title">Compétences académiques validées</h2>
+        <p class="project-text">Développement Unity complet · Programmation orientée objet · Game design et équilibrage · UI/UX (multi-résolution, support manette) · Animation, audio, particules · Gestion de version Git · Build et publication (WebGL &amp; Windows)</p>
+      </div>
+
+      <!-- Conclusion + CTA -->
+      <div class="project-footer">
+        <div class="project-conclusion">
+          <h2 class="project-section-title">Conclusion réflexive</h2>
+          <p class="project-text project-text--italic">Mener seul un projet de jeu complet en deux semaines — de la conception au build publié — m'a permis de consolider mes connaissances en architecture Unity, en POO et en game design. La contrainte de temps m'a aussi appris à prioriser, à trancher et à livrer quelque chose de jouable et équilibré plutôt que de viser la perfection sans jamais terminer.</p>
+        </div>
+        <div class="project-nav">
+          <a href="project-starsplinko.html" class="btn btn--outline">← Stars Plinko</a>
+          <a href="projects.html" class="btn btn--primary">Tous les projets →</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2026 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

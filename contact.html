@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Contactez Ryan Saderne — étudiant animateur 3D et développeur créatif." />
+  <title>Contact — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/contact.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta is-active">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero" aria-label="En-tête contact">
+      <div class="container page-hero__inner">
+        <p class="section-label">Travaillons ensemble</p>
+        <h1 class="display-title">Contact</h1>
+        <div class="divider"></div>
+        <p class="lead">Une opportunité de stage, une question, un projet ? N'hésitez pas à me contacter.</p>
+      </div>
+    </section>
+
+    <section class="section contact-main" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <h2 id="contact-heading" class="sr-only">Formulaire de contact</h2>
+
+        <!-- ─────────────────────────────────────────────────
+             FORMULAIRE FORMSPREE
+             Instructions :
+             1. Va sur https://formspree.io
+             2. Crée un compte gratuit avec saderneryan@gmail.com
+             3. Crée un nouveau formulaire → tu obtiens un ID genre "xpwzabcd"
+             4. Remplace YOUR_FORM_ID dans l'action ci-dessous par cet ID
+        ───────────────────────────────────────────────── -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm"
+                action="https://formspree.io/f/YOUR_FORM_ID"
+                method="POST"
+                novalidate>
+
+            <!-- Champ anti-spam honeypot -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+            <!-- Redirection après envoi (optionnel — commenter si tu veux rester sur la page) -->
+            <!-- <input type="hidden" name="_next" value="https://saderne-ryan.dev/contact.html?sent=1" /> -->
+
+            <div class="form-group">
+              <label for="name" class="form-label">Nom complet</label>
+              <input type="text" id="name" name="name" class="form-input"
+                     placeholder="Votre nom" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="email" class="form-input"
+                     placeholder="votre@email.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Sujet</label>
+              <input type="text" id="subject" name="subject" class="form-input"
+                     placeholder="Stage, collaboration, question..." />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea"
+                        rows="6" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary contact-submit" id="submitBtn">
+              Envoyer le message
+            </button>
+
+            <p class="form-feedback form-feedback--success" id="formSuccess" role="status" aria-live="polite" hidden>
+              ✓ Message envoyé ! Je vous répondrai dans les plus brefs délais.
+            </p>
+            <p class="form-feedback form-feedback--error" id="formError" role="alert" aria-live="polite" hidden>
+              Une erreur s'est produite. Réessayez ou écrivez directement à saderneryan@gmail.com
+            </p>
+          </form>
+        </div>
+
+        <!-- Infos contact -->
+        <div class="contact-info">
+          <h3 class="contact-info__title">Retrouvez-moi sur</h3>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-link__icon" aria-hidden="true">in</span>
+              <div>
+                <span class="contact-link__label">LinkedIn</span>
+                <span class="contact-link__handle">/ryan-saderne</span>
+              </div>
+            </a>
+            <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-link__icon" aria-hidden="true">As</span>
+              <div>
+                <span class="contact-link__label">ArtStation</span>
+                <span class="contact-link__handle">ryansaderne6</span>
+              </div>
+            </a>
+            <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="contact-link">
+              <span class="contact-link__icon" aria-hidden="true">itch</span>
+              <div>
+                <span class="contact-link__label">itch.io</span>
+                <span class="contact-link__handle">ryansaderne</span>
+              </div>
+            </a>
+            <a href="mailto:saderneryan@gmail.com" class="contact-link">
+              <span class="contact-link__icon" aria-hidden="true">@</span>
+              <div>
+                <span class="contact-link__label">Email direct</span>
+                <span class="contact-link__handle">saderneryan@gmail.com</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-availability">
+            <h3 class="contact-info__title">Disponibilité</h3>
+            <p class="contact-availability__text">
+              Disponible pour un stage de <strong>8 à 12 semaines</strong> dans le domaine de <strong>l'animation 3D</strong> ou du <strong>jeu vidéo</strong>.<br /><br />
+              Basé en Auvergne, mobile pour une opportunité à distance ou en présentiel. Permis B.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+  <script>
+    /* Formspree AJAX — envoie le message sans rechargement de page */
+    (function () {
+      const form = document.getElementById('contactForm');
+      const btn = document.getElementById('submitBtn');
+      const success = document.getElementById('formSuccess');
+      const error = document.getElementById('formError');
+      if (!form) return;
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        btn.disabled = true;
+        btn.textContent = 'Envoi en cours…';
+        success.hidden = true;
+        error.hidden = true;
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.reset();
+            success.hidden = false;
+            btn.textContent = '✓ Envoyé';
+          } else {
+            throw new Error('Réponse non-ok');
+          }
+        } catch {
+          error.hidden = false;
+          btn.disabled = false;
+          btn.textContent = 'Envoyer le message';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

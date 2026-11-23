@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Compétences de Ryan Saderne — 3D, animation, développement web, outils créatifs." />
+  <title>Compétences — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/skills.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link is-active">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero" aria-label="En-tête de page">
+      <div class="container page-hero__inner">
+        <p class="section-label">Ce que je sais faire</p>
+        <h1 class="display-title">Compétences</h1>
+        <div class="divider"></div>
+        <p class="lead">Des compétences construites sur des projets réels — en équipe, en formation, en autonomie.</p>
+      </div>
+    </section>
+
+    <section class="section skills-main" aria-labelledby="skills-main-heading">
+      <div class="container">
+        <h2 id="skills-main-heading" class="sr-only">Liste des compétences</h2>
+
+        <!-- ── 3D & Animation ── -->
+        <div class="skills-domain">
+          <div class="skills-domain__header">
+            <span class="skills-domain__icon" aria-hidden="true">🎬</span>
+            <h3 class="skills-domain__title">3D &amp; Animation</h3>
+          </div>
+
+          <div class="skills-exps">
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">Blender</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Modélisation et cell shading</h4>
+                <p class="skill-exp__desc">
+                  Modélisation de personnages et d'environnements avec Blender. Maîtrise du rendu EEVEE pour le cell shading — technique appliquée sur le projet Scooby-Doo de mon book d'animation.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Modélisation polygonale</li>
+                  <li class="tag">Rendu EEVEE</li>
+                  <li class="tag">Cell shading</li>
+                  <li class="tag">UV mapping</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">Unreal Engine 5</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Level design &amp; cinématique temps réel</h4>
+                <p class="skill-exp__desc">
+                  Leader du level design sur le projet Harlem Renaissance (équipe de 10). Création de scènes cinématographiques avec l'outil Séquenceur UE5, éclairage dynamique et post-process pour le court métrage.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Level design</li>
+                  <li class="tag">Séquenceur</li>
+                  <li class="tag">Lumen / Nanite</li>
+                  <li class="tag">Cinématique temps réel</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">DaVinci Resolve</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Post-production vidéo</h4>
+                <p class="skill-exp__desc">
+                  Montage et étalonnage colorimétrique pour les rendus 3D et vidéos de projets académiques. Exportation multi-formats pour présentation et portfolio.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Montage</li>
+                  <li class="tag">Étalonnage couleur</li>
+                  <li class="tag">Export multi-format</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">SketchUp</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Modélisation architecturale</h4>
+                <p class="skill-exp__desc">
+                  Modélisation de bâtiments et d'intérieurs pour les projets de jeu vidéo. Utilisé en complément de Blender pour la construction rapide d'environnements géométriques.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Architecture</li>
+                  <li class="tag">Intérieurs 3D</li>
+                  <li class="tag">Environnements</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Web & Code ── -->
+        <div class="skills-domain">
+          <div class="skills-domain__header">
+            <span class="skills-domain__icon" aria-hidden="true">💻</span>
+            <h3 class="skills-domain__title">Web &amp; Développement</h3>
+          </div>
+
+          <div class="skills-exps">
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">HTML5 / CSS3</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Intégration &amp; design de pages web</h4>
+                <p class="skill-exp__desc">
+                  Ce portfolio lui-même en est la preuve : codé de A à Z en HTML/CSS, avec animations GSAP, curseur personnalisé et transitions de page. Projet STRYVE : interface complète d'un réseau social sportif.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Responsive design</li>
+                  <li class="tag">CSS Grid / Flexbox</li>
+                  <li class="tag">Variables CSS</li>
+                  <li class="tag">Accessibilité WCAG</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">JavaScript</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Interactivité &amp; animations</h4>
+                <p class="skill-exp__desc">
+                  Filtres de projets interactifs, animations au scroll avec GSAP ScrollTrigger, vidéos au survol, navigation burger et transitions entre pages — tout développé en vanilla JS pour ce portfolio.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">GSAP</li>
+                  <li class="tag">DOM manipulation</li>
+                  <li class="tag">Events</li>
+                  <li class="tag">Animations</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">PHP</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Développement back-end basique</h4>
+                <p class="skill-exp__desc">
+                  Formulaires, sessions, gestion de données et bases de données MySQL. Pratiqué sur des projets académiques avec PHPStorm.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Formulaires</li>
+                  <li class="tag">Sessions</li>
+                  <li class="tag">MySQL</li>
+                  <li class="tag">PHPStorm</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Création & Design ── -->
+        <div class="skills-domain">
+          <div class="skills-domain__header">
+            <span class="skills-domain__icon" aria-hidden="true">🎨</span>
+            <h3 class="skills-domain__title">Création &amp; Design</h3>
+          </div>
+
+          <div class="skills-exps">
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">Dessin traditionnel</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Croquis, character design &amp; storyboard</h4>
+                <p class="skill-exp__desc">
+                  Pratique régulière du dessin — base de ma démarche créative. Utilisé pour le storyboard de la scène Scooby-Doo, le character design de personnages 3D et les maquettes de projets.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Character design</li>
+                  <li class="tag">Storyboard</li>
+                  <li class="tag">Concept art</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">GIMP / Photoshop</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Retouche &amp; textures</h4>
+                <p class="skill-exp__desc">
+                  Création et retouche de textures pour les modèles 3D, traitement d'images pour les projets web, visuels de présentation. Expérience acquise en stage chez Atomyk Pub (webdesign, 2022).
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Retouche photo</li>
+                  <li class="tag">Textures 3D</li>
+                  <li class="tag">Visuels web</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ── Soft skills ── -->
+        <div class="skills-domain">
+          <div class="skills-domain__header">
+            <span class="skills-domain__icon" aria-hidden="true">🤝</span>
+            <h3 class="skills-domain__title">Travail en équipe &amp; gestion</h3>
+          </div>
+
+          <div class="skills-exps">
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">Leadership</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Coordination d'équipe sur Harlem Renaissance</h4>
+                <p class="skill-exp__desc">
+                  Responsable de la coordination 3D sur une équipe de 10 personnes pour le projet Harlem Renaissance. Répartition des tâches de modélisation, suivi de la cohérence visuelle, arbitrage des choix de level design.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Gestion d'équipe</li>
+                  <li class="tag">Coordination 3D</li>
+                  <li class="tag">Prise de décision</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="skill-exp">
+              <div class="skill-exp__tool">
+                <span class="badge">Communication</span>
+              </div>
+              <div class="skill-exp__content">
+                <h4 class="skill-exp__title">Relation client &amp; accueil</h4>
+                <p class="skill-exp__desc">
+                  Expérience en contact avec le public : service en mairie du Puy-en-Velay (accueil administratif, août 2025) et caissier / mise en rayon chez Intermarché (août 2024). Sens du service et de la communication.
+                </p>
+                <ul class="skill-exp__tags">
+                  <li class="tag">Service client</li>
+                  <li class="tag">Accueil public</li>
+                  <li class="tag">Adaptabilité</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Langues -->
+        <div class="skills-langs">
+          <p class="section-label">Langues</p>
+          <div class="skills-langs__grid">
+            <div class="lang-card">
+              <span class="lang-card__flag" aria-hidden="true">🇫🇷</span>
+              <span class="lang-card__name">Français</span>
+              <span class="lang-card__level">Natif</span>
+            </div>
+            <div class="lang-card">
+              <span class="lang-card__flag" aria-hidden="true">🇬🇧</span>
+              <span class="lang-card__name">Anglais</span>
+              <span class="lang-card__level">B2</span>
+            </div>
+            <div class="lang-card">
+              <span class="lang-card__flag" aria-hidden="true">🇮🇹</span>
+              <span class="lang-card__name">Italien</span>
+              <span class="lang-card__level">B1</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

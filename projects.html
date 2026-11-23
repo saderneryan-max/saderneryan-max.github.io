@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Projets de Ryan Saderne — 3D, animation, jeu vidéo et développement web." />
+  <title>Projets — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/projects.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero" aria-label="En-tête de page">
+      <div class="container page-hero__inner">
+        <p class="section-label">Mes réalisations</p>
+        <h1 class="display-title">Projets</h1>
+        <div class="divider"></div>
+        <p class="lead">3D, animation, jeu vidéo et développement web — projets académiques et personnels.</p>
+      </div>
+    </section>
+
+    <section class="section projects-main" aria-labelledby="projects-list-heading">
+      <div class="container">
+
+        <!-- Filtres -->
+        <div class="projects-filter" role="group" aria-label="Filtrer par catégorie">
+          <button class="filter-btn is-active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="3D">3D</button>
+          <button class="filter-btn" data-filter="Animation">Animation</button>
+          <button class="filter-btn" data-filter="Web">Web</button>
+          <button class="filter-btn" data-filter="Jeu vidéo">Jeu vidéo</button>
+        </div>
+
+        <h2 id="projects-list-heading" class="sr-only">Liste des projets</h2>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Harlem Renaissance -->
+          <article class="card project-card" data-category="3D">
+            <a href="project-harlem.html" class="project-card__link" aria-label="Voir le projet Harlem Renaissance">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/harlem-thumb.jpg" alt="Jeu vidéo 3D Harlem Renaissance" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/harlem-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">3D</span><span class="tag">Jeu vidéo</span><span class="tag">Unreal Engine</span>
+                </div>
+                <h3 class="project-card__title">Harlem Renaissance</h3>
+                <p class="project-card__desc">Jeu narratif 3D — leader modélisation et level design sur une équipe de 10.</p>
+                <span class="project-card__year">BUT1 — 2025–2026</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Court métrage UE5 -->
+          <article class="card project-card" data-category="Animation">
+            <a href="project-courtmetrage.html" class="project-card__link" aria-label="Voir le projet court métrage UE5">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/courtmetrage-thumb.jpg" alt="Court métrage cinématographique UE5" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/courtmetrage-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Animation</span><span class="tag">UE5</span><span class="tag">Cinématique</span>
+                </div>
+                <h3 class="project-card__title">Court métrage UE5</h3>
+                <p class="project-card__desc">Scène cinématographique 3D — Séquenceur UE5, Lumen, post-process DaVinci.</p>
+                <span class="project-card__year">BUT1 — 2025–2026</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- STRYVE -->
+          <article class="card project-card" data-category="Web">
+            <a href="project-stryve.html" class="project-card__link" aria-label="Voir le projet STRYVE">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/stryve-thumb.jpg" alt="STRYVE réseau social sportif" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/stryve-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Web</span><span class="tag">HTML/CSS/JS</span><span class="tag">UI Design</span>
+                </div>
+                <h3 class="project-card__title">STRYVE</h3>
+                <p class="project-card__desc">Réseau social sportif — conception UI et développement front-end.</p>
+                <span class="project-card__year">BUT1 — 2025–2026</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- StarsPlinko -->
+          <article class="card project-card" data-category="Jeu vidéo">
+            <a href="project-starsplinko.html" class="project-card__link" aria-label="Voir le projet StarsPlinko">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/starsplinko-thumb.jpg" alt="StarsPlinko jeu plinko spatial" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/starsplinko-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Jeu vidéo</span><span class="tag">BUT2</span><span class="tag">itch.io</span>
+                </div>
+                <h3 class="project-card__title">StarsPlinko</h3>
+                <p class="project-card__desc">Jeu de plinko à thème spatial — physique, game design et publication sur itch.io.</p>
+                <span class="project-card__year">BUT2 — 2026–2027</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- Le Potager Solarpunk -->
+          <article class="card project-card" data-category="Jeu vidéo">
+            <a href="project-solarpunk.html" class="project-card__link" aria-label="Voir le projet Le Potager Solarpunk">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/solarpunk-thumb.jpg" alt="Le Potager Solarpunk jeu de gestion" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/solarpunk-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Jeu vidéo</span><span class="tag">BUT2</span><span class="tag">Unity 6.3</span><span class="tag">itch.io</span>
+                </div>
+                <h3 class="project-card__title">Le Potager Solarpunk</h3>
+                <p class="project-card__desc">Simulation cozy en solo — drone horticole, marché, livraisons, 2 semaines de dev.</p>
+                <span class="project-card__year">BUT2 — Nov. 2026</span>
+              </div>
+            </a>
+          </article>
+
+          <!-- La Maison Hantée (animation) -->
+          <article class="card project-card" data-category="Animation">
+            <a href="project-maison-hantee.html" class="project-card__link" aria-label="Voir le projet La Maison Hantée">
+              <div class="img-wrap project-card__img">
+                <img src="assets/img/maison-hantee-thumb.jpg" alt="La Maison Hantée animation 3D Scooby-Doo" onerror="this.style.opacity='0'" />
+                <video class="project-card__video" src="assets/videos/maison-hantee-preview.mp4" muted playsinline loop preload="none" aria-hidden="true"></video>
+                <div class="project-card__overlay"><span class="project-card__cta">Voir le projet →</span></div>
+              </div>
+              <div class="project-card__body">
+                <div class="project-card__tags">
+                  <span class="tag">Animation</span><span class="tag">3D</span><span class="tag">Cell shading</span>
+                </div>
+                <h3 class="project-card__title">La Maison Hantée</h3>
+                <p class="project-card__desc">Animation 3D style Scooby-Doo — Mystery Machine, cell shading EEVEE, book BUT2.</p>
+                <span class="project-card__year">BUT2 — 2026–2027</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+
+        <!-- Section itch.io -->
+        <div class="projects-itchio">
+          <div class="projects-itchio__inner">
+            <div class="projects-itchio__text">
+              <p class="section-label">Jeux indépendants</p>
+              <h2 class="display-title--sm">Mes jeux sur itch.io</h2>
+              <p class="lead">StarsPlinko, Le Potager Solarpunk et autres expérimentations de game jam — jouables directement dans le navigateur.</p>
+              <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                Voir mes jeux sur itch.io ↗
+              </a>
+            </div>
+            <div class="projects-itchio__logo" aria-hidden="true">
+              <span class="projects-itchio__icon">itch</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

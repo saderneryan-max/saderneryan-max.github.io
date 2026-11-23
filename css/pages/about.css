@@ -1,0 +1,231 @@
+/* ============================================================
+   ABOUT.CSS — Page À propos — Ryan Saderne Portfolio
+   ============================================================ */
+
+/* ── Page hero ── */
+.page-hero {
+  padding-top: calc(var(--nav-h) + var(--space-2xl));
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ── Intro ── */
+.about-intro__grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.about-photo-wrap {
+  width: 100%;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+
+.about-photo-placeholder {
+  display: none;
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  color: var(--purple);
+  letter-spacing: 0.1em;
+}
+
+.about-intro__socials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.about-intro__subtitle {
+  font-size: var(--size-sm);
+  color: var(--purple-light);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+  font-weight: 400;
+}
+
+.about-intro__body {
+  font-size: var(--size-base);
+  color: var(--text-muted);
+  line-height: var(--leading-loose);
+  margin-top: var(--space-md);
+  max-width: 60ch;
+}
+
+.about-intro__langs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+/* ── Timeline parcours ── */
+.about-timeline {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline {
+  margin-top: var(--space-xl);
+  position: relative;
+  padding-left: var(--space-xl);
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--purple), transparent);
+}
+
+.timeline__item {
+  position: relative;
+  padding-bottom: var(--space-xl);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.timeline__item::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * var(--space-xl));
+  top: 8px;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  background: var(--purple);
+  border: 2px solid var(--bg-alt);
+  transform: translateX(-4px);
+}
+
+.timeline__date {
+  font-size: var(--size-xs);
+  color: var(--purple-light);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  padding-top: 2px;
+}
+
+.timeline__title {
+  font-size: var(--size-md);
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: var(--space-xs);
+}
+
+.timeline__place {
+  font-size: var(--size-sm);
+  color: var(--purple-light);
+  margin-bottom: var(--space-sm);
+}
+
+.timeline__desc {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+}
+
+/* ── PPP ── */
+.ppp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.ppp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  transition: border-color var(--dur-base) var(--ease),
+              transform var(--dur-base) var(--ease-spring);
+}
+
+.ppp-card:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-4px);
+}
+
+.ppp-card--main {
+  border-color: var(--border-strong);
+  background: linear-gradient(135deg, var(--bg-card), var(--purple-dim));
+}
+
+.ppp-card__icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+}
+
+.ppp-card__title {
+  font-size: var(--size-md);
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: var(--space-md);
+  line-height: var(--leading-tight);
+}
+
+.ppp-card__text {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-loose);
+}
+
+.ppp-quote {
+  border-left: 2px solid var(--purple);
+  padding-left: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+
+.ppp-quote blockquote {
+  font-size: var(--size-lg);
+  color: var(--text);
+  line-height: var(--leading-loose);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .about-intro__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo-wrap {
+    max-width: 240px;
+    margin-inline: auto;
+  }
+
+  .about-intro__socials {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .ppp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline__item {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+}

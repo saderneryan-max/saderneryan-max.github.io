@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Court métrage cinématographique UE5 — projet de Ryan Saderne." />
+  <title>Court métrage UE5 — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/project.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="project-hero" aria-label="En-tête projet">
+      <div class="container project-hero__inner">
+        <a href="projects.html" class="project-back">← Retour aux projets</a>
+        <div class="project-hero__tags">
+          <span class="badge">Animation</span>
+          <span class="badge">UE5</span>
+          <span class="badge">Cinématique</span>
+        </div>
+        <h1 class="display-title">Court métrage UE5</h1>
+        <p class="project-hero__sub">Création d'une scène cinématographique immersive — Unreal Engine 5</p>
+        <div class="project-hero__tools">
+          <span class="tag">Unreal Engine 5</span>
+          <span class="tag">DaVinci Resolve</span>
+          <span class="tag">Bibliothèque Fab</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container project-body">
+
+      <div class="project-top">
+        <div class="project-main-img">
+          <div class="img-wrap project-main-media">
+            <img src="assets/img/courtmetrage-thumb.jpg" alt="Vue principale du court métrage UE5"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>Rendu principal — Court métrage UE5</div>'" />
+            <video src="assets/videos/courtmetrage-preview.mp4" muted playsinline loop preload="none"
+                   aria-hidden="true" class="project-main-video"></video>
+          </div>
+        </div>
+        <div class="project-context">
+          <h2 class="project-section-title">Contexte &amp; sujet</h2>
+          <p class="project-text">Dans le cadre d'un cours de modélisation 3D, j'ai réalisé mon premier court métrage avec Unreal Engine 5. L'objectif était de créer une scène immersive avec environnement 3D, mise en scène et éclairage dynamique afin de produire un rendu proche des productions professionnelles.</p>
+          <p class="project-text">Projet individuel réalisé en BUT Informatique Graphique — 1ère année.</p>
+        </div>
+      </div>
+
+      <div class="project-two-col">
+        <div class="project-block">
+          <h2 class="project-section-title">Objectifs visés</h2>
+          <ul class="project-list">
+            <li>Découvrir la création cinématographique sous UE5</li>
+            <li>Réaliser un environnement 3D crédible et immersif</li>
+            <li>Maîtriser les outils caméra et séquençage</li>
+            <li>Créer une ambiance via lighting et post-process</li>
+            <li>Développer la narration visuelle</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h2 class="project-section-title">Mes missions</h2>
+          <ul class="project-list">
+            <li>Mise en place de la scène 3D principale</li>
+            <li>Placement et animation des caméras</li>
+            <li>Éclairage et réglage des ombres</li>
+            <li>Création des matériaux (Material Graph)</li>
+            <li>Post-production sous DaVinci Resolve</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-block">
+        <h2 class="project-section-title">Étapes du projet</h2>
+        <ol class="project-timeline">
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Création scène</span>
+            <span class="project-timeline__desc">Import assets, décors, proportions</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Mise en scène</span>
+            <span class="project-timeline__desc">Caméras, mouvements, transitions</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Éclairage</span>
+            <span class="project-timeline__desc">Sources lumineuses, ombres, post-process</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Matériaux</span>
+            <span class="project-timeline__desc">Material Graph, textures, shaders</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Rendu final</span>
+            <span class="project-timeline__desc">Export vidéo, montage DaVinci</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="project-block">
+        <h2 class="project-section-title">Illustrations</h2>
+        <div class="project-gallery">
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/courtmetrage-ue5.jpg" alt="Interface Unreal Engine 5 bibliothèque de projets"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Interface UE5</div>'" />
+            </div>
+            <figcaption>Interface Unreal Engine 5 — bibliothèque de projets</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/courtmetrage-scene.jpg" alt="Scène 3D immersive en cours de construction"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Scène 3D en cours</div>'" />
+            </div>
+            <figcaption>Scène 3D immersive en cours (grottes et végétation)</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/courtmetrage-materiau.jpg" alt="Éditeur de matériaux Material Graph UE5"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Material Graph</div>'" />
+            </div>
+            <figcaption>Éditeur Material Graph dans Unreal Engine 5</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/courtmetrage-davinci.jpg" alt="Post-production DaVinci Resolve"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>DaVinci Resolve</div>'" />
+            </div>
+            <figcaption>Post-production de la séquence dans DaVinci Resolve</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="project-skills">
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Compétences techniques</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Modélisation 3D</span>
+            <span class="badge">Éclairage temps réel</span>
+            <span class="badge">Post-process</span>
+            <span class="badge">Séquençage cinématique</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Transversales</h3>
+          <div class="project-skills__tags">
+            <span class="badge">Sens artistique</span>
+            <span class="badge">Narration par l'image</span>
+            <span class="badge">Autonomie</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Outils utilisés</h3>
+          <div class="project-skills__tags">
+            <span class="tag">Unreal Engine 5</span>
+            <span class="tag">DaVinci Resolve</span>
+            <span class="tag">Fab (assets)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-block project-academic">
+        <h2 class="project-section-title">Compétences académiques validées</h2>
+        <p class="project-text">Modélisation 3D et environnements virtuels · Production audiovisuelle · Gestion des pipelines de rendu · Composition visuelle · Narration par l'image</p>
+      </div>
+
+      <div class="project-footer">
+        <div class="project-conclusion">
+          <h2 class="project-section-title">Conclusion réflexive</h2>
+          <p class="project-text project-text--italic">Ce projet m'a permis de découvrir les méthodes de production utilisées dans le cinéma numérique et le jeu vidéo. J'ai appris à exploiter les fonctionnalités d'UE5 pour créer une scène complète intégrant environnement, éclairage, effets visuels et séquences cinématographiques. La post-production sous DaVinci Resolve a complété ma compréhension du pipeline audiovisuel de bout en bout.</p>
+        </div>
+        <div class="project-nav">
+          <a href="project-harlem.html" class="btn btn--outline">← Projet précédent</a>
+          <a href="project-stryve.html" class="btn btn--primary">Projet suivant →</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

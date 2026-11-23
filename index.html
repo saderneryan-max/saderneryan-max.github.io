@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Portfolio de Ryan Saderne — Étudiant en BUT Informatique Graphique, animateur 3D et développeur créatif." />
+  <meta name="author" content="Ryan Saderne" />
+  <title>Ryan Saderne — Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+<body>
+
+  <!-- Curseur personnalisé -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Overlay transition de page -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- ════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link is-active">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════
+       HERO
+  ════════════════════════════════ -->
+  <section class="hero" aria-label="Introduction">
+    <!-- Fond décoratif -->
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="hero__eyebrow anim-slide-up">Étudiant BUT Informatique Graphique</p>
+        <h1 class="hero__title">
+          <span class="hero__title-line" data-text="RYAN">RYAN</span>
+          <span class="hero__title-line hero__title-line--accent" data-text="SADERNE">SADERNE</span>
+        </h1>
+        <p class="hero__role anim-slide-up anim-delay-3">
+          Animateur 3D &amp; Développeur créatif
+        </p>
+        <p class="hero__desc anim-slide-up anim-delay-4">
+          Passionné par l'animation 3D, le jeu vidéo et la création numérique.<br />
+          En formation à l'IUT Clermont Auvergne, site du Puy-en-Velay.
+        </p>
+        <div class="hero__actions anim-slide-up anim-delay-5">
+          <a href="projects.html" class="btn btn--primary">Voir mes projets</a>
+          <a href="book.html" class="btn btn--outline">Book 3D</a>
+        </div>
+      </div>
+
+      <div class="hero__visual anim-scale-in anim-delay-2" aria-hidden="true">
+        <!-- Remplacer par ta photo ou illustration 3D -->
+        <div class="hero__avatar">
+          <div class="hero__avatar-inner">
+            <img src="assets/img/photo-profil.jpg" alt="Ryan Saderne" 
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="hero__avatar-placeholder">RS</div>
+          </div>
+          <div class="hero__avatar-ring" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       PROJETS RÉCENTS
+  ════════════════════════════════ -->
+  <section class="section home-projects" aria-labelledby="projects-heading">
+    <div class="container">
+      <div class="home-projects__header">
+        <div>
+          <p class="section-label">Mes travaux</p>
+          <h2 id="projects-heading" class="display-title--sm">Projets récents</h2>
+        </div>
+        <a href="projects.html" class="btn btn--outline">Tous les projets</a>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Projet 1 — Harlem -->
+        <article class="card project-card" data-category="3D">
+          <a href="project-harlem.html" class="project-card__link" aria-label="Voir le projet Harlem Renaissance">
+            <div class="img-wrap project-card__img">
+              <img src="assets/img/harlem-thumb.jpg" alt="Jeu vidéo narratif 3D — Harlem Renaissance"
+                   onerror="this.style.opacity='0'" />
+              <video class="project-card__video" src="assets/videos/harlem-preview.mp4"
+                     muted playsinline loop preload="none"
+                     aria-hidden="true"></video>
+              <div class="project-card__overlay">
+                <span class="project-card__cta">Voir le projet →</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">3D</span>
+                <span class="tag">Jeu vidéo</span>
+                <span class="tag">Unreal Engine</span>
+              </div>
+              <h3 class="project-card__title">Harlem Renaissance</h3>
+              <p class="project-card__desc">Jeu narratif 3D immersif — modélisation d'environnements historiques sous UE5.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Projet 2 — Court métrage -->
+        <article class="card project-card" data-category="Animation">
+          <a href="project-courtmetrage.html" class="project-card__link" aria-label="Voir le projet court métrage UE5">
+            <div class="img-wrap project-card__img">
+              <img src="assets/img/courtmetrage-thumb.jpg" alt="Court métrage cinématographique Unreal Engine 5"
+                   onerror="this.style.opacity='0'" />
+              <video class="project-card__video" src="assets/videos/courtmetrage-preview.mp4"
+                     muted playsinline loop preload="none"
+                     aria-hidden="true"></video>
+              <div class="project-card__overlay">
+                <span class="project-card__cta">Voir le projet →</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">Animation</span>
+                <span class="tag">UE5</span>
+                <span class="tag">Cinématique</span>
+              </div>
+              <h3 class="project-card__title">Court métrage UE5</h3>
+              <p class="project-card__desc">Scène cinématographique immersive réalisée avec Unreal Engine 5.</p>
+            </div>
+          </a>
+        </article>
+
+        <!-- Projet 3 — STRYVE -->
+        <article class="card project-card" data-category="Web">
+          <a href="project-stryve.html" class="project-card__link" aria-label="Voir le projet STRYVE">
+            <div class="img-wrap project-card__img">
+              <img src="assets/img/stryve-thumb.jpg" alt="STRYVE — Réseau social sportif"
+                   onerror="this.style.opacity='0'" />
+              <video class="project-card__video" src="assets/videos/stryve-preview.mp4"
+                     muted playsinline loop preload="none"
+                     aria-hidden="true"></video>
+              <div class="project-card__overlay">
+                <span class="project-card__cta">Voir le projet →</span>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">Web</span>
+                <span class="tag">HTML/CSS/JS</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <h3 class="project-card__title">STRYVE</h3>
+              <p class="project-card__desc">Réseau social dédié aux passionnés de sport — design et développement front-end.</p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       COMPÉTENCES RAPIDES
+  ════════════════════════════════ -->
+  <section class="section home-skills" aria-labelledby="skills-heading">
+    <div class="container">
+      <p class="section-label">Ce que je maîtrise</p>
+      <h2 id="skills-heading" class="display-title--sm">Outils &amp; compétences</h2>
+      <div class="home-skills__grid">
+        <div class="home-skills__group">
+          <h3 class="home-skills__group-title">3D &amp; Animation</h3>
+          <div class="home-skills__badges">
+            <span class="badge">Blender</span>
+            <span class="badge">Unreal Engine 5</span>
+            <span class="badge">SketchUp</span>
+            <span class="badge">DaVinci Resolve</span>
+          </div>
+        </div>
+        <div class="home-skills__group">
+          <h3 class="home-skills__group-title">Web &amp; Code</h3>
+          <div class="home-skills__badges">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">PHP</span>
+          </div>
+        </div>
+        <div class="home-skills__group">
+          <h3 class="home-skills__group-title">Création</h3>
+          <div class="home-skills__badges">
+            <span class="badge">Photoshop</span>
+            <span class="badge">GIMP</span>
+            <span class="badge">Illustrator</span>
+            <span class="badge">Dessin traditionnel</span>
+          </div>
+        </div>
+      </div>
+      <a href="skills.html" class="btn btn--outline home-skills__more">Voir toutes mes compétences</a>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       BOOK CTA
+  ════════════════════════════════ -->
+  <section class="section home-book" aria-labelledby="book-heading">
+    <div class="container">
+      <div class="home-book__inner">
+        <div class="home-book__text">
+          <p class="section-label">Animation 3D</p>
+          <h2 id="book-heading" class="display-title--sm">Mon book d'animation</h2>
+          <p class="lead">Cycles de personnage, scènes animées et créations 3D. Découvrez mon travail d'animation en cours de constitution.</p>
+          <a href="book.html" class="btn btn--primary">Voir le book</a>
+        </div>
+        <div class="home-book__visual" aria-hidden="true">
+          <div class="home-book__orb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       FOOTER
+  ════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- JS -->
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

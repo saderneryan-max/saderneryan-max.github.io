@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="CV de Ryan Saderne — Étudiant BUT Informatique Graphique, animateur 3D." />
+  <title>CV — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/cv.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link is-active">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="page-hero cv-hero" aria-label="En-tête CV">
+      <div class="container page-hero__inner">
+        <div class="cv-hero__top">
+          <div>
+            <p class="section-label">Mon parcours</p>
+            <h1 class="display-title">Ryan Saderne</h1>
+            <p class="cv-hero__subtitle">Étudiant BUT Informatique Graphique · 19 ans · Permis B</p>
+          </div>
+          <a href="assets/cv-ryan-saderne.pdf" download class="btn btn--primary cv-download-btn">
+            ↓ Télécharger le CV (PDF)
+          </a>
+        </div>
+        <div class="divider"></div>
+      </div>
+    </section>
+
+    <section class="section cv-main" aria-labelledby="cv-heading">
+      <div class="container">
+        <h2 id="cv-heading" class="sr-only">Détail du CV</h2>
+
+        <div class="cv-grid">
+          <!-- Colonne gauche -->
+          <div class="cv-col cv-col--left">
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Coordonnées</h3>
+              <ul class="cv-info-list">
+                <li class="cv-info-item">
+                  <span class="cv-info-label">Email</span>
+                  <a href="mailto:saderneryan@gmail.com" class="cv-info-link">saderneryan@gmail.com</a>
+                </li>
+                <li class="cv-info-item">
+                  <span class="cv-info-label">Portfolio</span>
+                  <a href="https://saderne-ryan.dev" class="cv-info-link">saderne-ryan.dev</a>
+                </li>
+                <li class="cv-info-item">
+                  <span class="cv-info-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="cv-info-link">linkedin.com/in/ryan-saderne</a>
+                </li>
+                <li class="cv-info-item">
+                  <span class="cv-info-label">ArtStation</span>
+                  <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="cv-info-link">artstation.com/ryansaderne6</a>
+                </li>
+                <li class="cv-info-item">
+                  <span class="cv-info-label">itch.io</span>
+                  <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="cv-info-link">itch.io/ryansaderne</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Compétences techniques</h3>
+              <div class="cv-tags">
+                <span class="badge">Blender</span>
+                <span class="badge">Unreal Engine 5</span>
+                <span class="badge">SketchUp</span>
+                <span class="badge">DaVinci Resolve</span>
+                <span class="badge">HTML5 / CSS3</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">PHP / MySQL</span>
+                <span class="badge">GIMP</span>
+                <span class="badge">Photoshop</span>
+                <span class="badge">Illustrator</span>
+                <span class="badge">Git / GitHub</span>
+                <span class="badge">VS Code</span>
+                <span class="badge">PHPStorm</span>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Langues</h3>
+              <ul class="cv-info-list">
+                <li class="cv-info-item"><span class="cv-info-label">Français</span><span>Natif</span></li>
+                <li class="cv-info-item"><span class="cv-info-label">Anglais</span><span>B2</span></li>
+                <li class="cv-info-item"><span class="cv-info-label">Italien</span><span>B1</span></li>
+              </ul>
+            </div>
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Centres d'intérêt</h3>
+              <div class="cv-tags">
+                <span class="tag">Animation 3D</span>
+                <span class="tag">Jeu vidéo</span>
+                <span class="tag">Dessin</span>
+                <span class="tag">Cinéma d'animation</span>
+                <span class="tag">Game jam</span>
+                <span class="tag">Web créatif</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Colonne droite -->
+          <div class="cv-col cv-col--right">
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Formation</h3>
+              <div class="cv-timeline">
+                <div class="cv-entry">
+                  <div class="cv-entry__date">2024 — Présent</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">BUT Informatique Graphique — 2ème année</h4>
+                    <p class="cv-entry__place">IUT Clermont Auvergne, Le Puy-en-Velay</p>
+                    <p class="cv-entry__desc">Animation 3D avancée, développement web, gestion de projet, stage en entreprise (8–12 semaines) dans le domaine de l'animation ou du jeu vidéo.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">2023 — 2024</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">BUT Informatique Graphique — 1ère année</h4>
+                    <p class="cv-entry__place">IUT Clermont Auvergne, Le Puy-en-Velay</p>
+                    <p class="cv-entry__desc">Modélisation 3D (Blender, SketchUp, UE5), animation, développement web (HTML, CSS, JS, PHP), conception d'interfaces. Projets : Harlem Renaissance, Court métrage UE5, STRYVE.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">2024</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Baccalauréat STI2D</h4>
+                    <p class="cv-entry__place">Lycée Charles et Adrien Dupuy, Le Puy-en-Velay</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Expériences professionnelles</h3>
+              <div class="cv-timeline">
+                <div class="cv-entry">
+                  <div class="cv-entry__date">Août 2025</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Agent d'accueil administratif</h4>
+                    <p class="cv-entry__place">Mairie du Puy-en-Velay</p>
+                    <p class="cv-entry__desc">Accueil du public, orientation et traitement des demandes administratives. Développement du sens du service et de la communication.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">Août 2024</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Employé commercial</h4>
+                    <p class="cv-entry__place">Intermarché</p>
+                    <p class="cv-entry__desc">Caisse, mise en rayon, relations clients. Rigueur et autonomie dans un environnement dynamique.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">Fév. 2022</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Stage Webdesign</h4>
+                    <p class="cv-entry__place">Atomyk Pub, agence de communication</p>
+                    <p class="cv-entry__desc">Création de visuels pour le web, retouche photo (GIMP / Photoshop), intégration de contenus. Première immersion professionnelle dans le secteur créatif.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cv-block">
+              <h3 class="cv-block__title">Projets académiques majeurs</h3>
+              <div class="cv-timeline">
+                <div class="cv-entry">
+                  <div class="cv-entry__date">BUT1</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Harlem Renaissance — Jeu vidéo 3D</h4>
+                    <p class="cv-entry__desc">Leader modélisation 3D et level design. Coordination d'une équipe de 10 personnes. Blender, SketchUp, Unreal Engine 5.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">BUT1</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">Court métrage cinématographique — UE5</h4>
+                    <p class="cv-entry__desc">Scène 3D immersive, éclairage dynamique Lumen, séquenceur cinématographique, post-production DaVinci Resolve.</p>
+                  </div>
+                </div>
+                <div class="cv-entry">
+                  <div class="cv-entry__date">BUT1</div>
+                  <div class="cv-entry__content">
+                    <h4 class="cv-entry__title">STRYVE — Réseau social sportif</h4>
+                    <p class="cv-entry__desc">Conception UI complète, développement front-end HTML/CSS/JS, design responsive.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+ASSETS — Guide de placement des médias
+======================================
+
+📁 assets/img/
+  ├── photo-profil.jpg          → Ta photo de profil (hero accueil)
+  ├── harlem-thumb.jpg          → Miniature Harlem Renaissance
+  ├── courtmetrage-thumb.jpg    → Miniature Court métrage UE5
+  ├── stryve-thumb.jpg          → Miniature STRYVE
+  ├── but2-jeu-thumb.jpg        → Miniature projet jeu vidéo BUT2
+  ├── but2-anim-thumb.jpg       → Miniature projet animation BUT2
+  │
+  │   (Pour chaque page projet)
+  ├── harlem-main.jpg           → Image principale fiche Harlem
+  ├── harlem-gallery-1.jpg      → Galerie Harlem (4 images)
+  ├── harlem-gallery-2.jpg
+  ├── harlem-gallery-3.jpg
+  ├── harlem-gallery-4.jpg
+  └── (idem pour courtmetrage et stryve)
+
+📁 assets/videos/
+  ├── harlem-preview.mp4        → Vidéo mini-preview Harlem (10-30s, léger)
+  ├── courtmetrage-preview.mp4  → Vidéo mini-preview Court métrage
+  ├── stryve-preview.mp4        → Vidéo mini-preview STRYVE
+  ├── but2-jeu-preview.mp4      → Vidéo mini-preview projet jeu BUT2
+  └── but2-anim-preview.mp4     → Vidéo mini-preview projet anim BUT2
+
+📄 assets/cv-ryan-saderne.pdf   → Ton CV en PDF (pour le bouton téléchargement)
+
+CONSEILS VIDÉOS :
+- Format : MP4 (H.264)
+- Résolution : 720p max (elles jouent en petit)
+- Durée : 10–30 secondes en boucle
+- Taille : < 5 Mo par vidéo pour le web
+- Tu peux les compresser avec HandBrake (gratuit)
+
+Si tu n'as pas encore de vidéos, les cartes affichent l'image miniature par défaut.

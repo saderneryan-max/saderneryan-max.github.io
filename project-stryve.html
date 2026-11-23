@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="STRYVE — Réseau social sportif, projet de Ryan Saderne." />
+  <title>STRYVE — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/project.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link is-active">Projets</a></li>
+        <li><a href="book.html" class="nav__link">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <section class="project-hero" aria-label="En-tête projet">
+      <div class="container project-hero__inner">
+        <a href="projects.html" class="project-back">← Retour aux projets</a>
+        <div class="project-hero__tags">
+          <span class="badge">Web</span>
+          <span class="badge">HTML/CSS/JS</span>
+          <span class="badge">UI Design</span>
+        </div>
+        <h1 class="display-title">STRYVE</h1>
+        <p class="project-hero__sub">Réseau social dédié aux passionnés de sport — design et développement front-end</p>
+        <div class="project-hero__tools">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Visual Studio Code</span>
+          <span class="tag">Canva</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="container project-body">
+
+      <div class="project-top">
+        <div class="project-main-img">
+          <div class="img-wrap project-main-media">
+            <img src="assets/img/stryve-main.jpg" alt="Page principale STRYVE"
+                 onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>STRYVE — Page principale</div>'" />
+            <video src="assets/videos/stryve-preview.mp4" muted playsinline loop preload="none"
+                   aria-hidden="true" class="project-main-video"></video>
+          </div>
+        </div>
+        <div class="project-context">
+          <h2 class="project-section-title">Contexte &amp; sujet</h2>
+          <p class="project-text">Dans le cadre d'un cours de développement web, nous avons conçu STRYVE, un réseau social destiné aux sportifs amateurs, compétiteurs et passionnés. La plateforme permet d'échanger, de publier des performances, de suivre l'actualité sportive et de communiquer avec d'autres membres.</p>
+          <p class="project-text">Projet réalisé en équipe dans le cadre du BUT Informatique Graphique — 1ère année.</p>
+        </div>
+      </div>
+
+      <div class="project-two-col">
+        <div class="project-block">
+          <h2 class="project-section-title">Objectifs visés</h2>
+          <ul class="project-list">
+            <li>Concevoir une interface moderne et ergonomique</li>
+            <li>Développer un réseau social spécialisé sport</li>
+            <li>Architecture inspirée des réseaux sociaux existants</li>
+            <li>Design responsive tous supports</li>
+            <li>Cohérence visuelle et expérience utilisateur</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <h2 class="project-section-title">Mes missions</h2>
+          <ul class="project-list">
+            <li>Création de l'identité visuelle STRYVE</li>
+            <li>Conception des maquettes et architecture pages</li>
+            <li>Développement page de connexion (HTML/JS)</li>
+            <li>Développement page principale (HTML/JS)</li>
+            <li>Adaptation responsive mobile et tablette</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="project-block">
+        <h2 class="project-section-title">Étapes du projet</h2>
+        <ol class="project-timeline">
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Analyse</span>
+            <span class="project-timeline__desc">Idéation, public cible, croquis</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Identité visuelle</span>
+            <span class="project-timeline__desc">Nom, logo, palette, typographie</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Maquettes</span>
+            <span class="project-timeline__desc">Architecture, wireframes</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Développement</span>
+            <span class="project-timeline__desc">HTML, CSS, JavaScript</span>
+          </li>
+          <li class="project-timeline__item">
+            <span class="project-timeline__step">Responsive</span>
+            <span class="project-timeline__desc">Adaptation mobile, tablette</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="project-block">
+        <h2 class="project-section-title">Illustrations</h2>
+        <div class="project-gallery">
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/stryve-login.jpg" alt="Page de connexion STRYVE"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Page connexion STRYVE</div>'" />
+            </div>
+            <figcaption>Page de connexion et d'inscription de STRYVE</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/stryve-home.jpg" alt="Page principale STRYVE fil d'actualité"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Page principale — fil d\'actualité</div>'" />
+            </div>
+            <figcaption>Page principale — fil d'actualité, contacts, publications</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/stryve-html.jpg" alt="Code HTML page inscription Visual Studio Code"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Code HTML — inscription</div>'" />
+            </div>
+            <figcaption>Code HTML de la page d'inscription (Visual Studio Code)</figcaption>
+          </figure>
+          <figure class="project-gallery__item">
+            <div class="img-wrap">
+              <img src="assets/img/stryve-js.jpg" alt="Code JavaScript fonctionnalités STRYVE"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'>Code JavaScript</div>'" />
+            </div>
+            <figcaption>Code JavaScript — gestion des interactions et fonctionnalités</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="project-skills">
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Compétences techniques</h3>
+          <div class="project-skills__tags">
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Responsive Design</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Transversales</h3>
+          <div class="project-skills__tags">
+            <span class="badge">UI Design</span>
+            <span class="badge">Identité visuelle</span>
+            <span class="badge">UX / Ergonomie</span>
+          </div>
+        </div>
+        <div class="project-skills__block">
+          <h3 class="project-skills__title">Outils utilisés</h3>
+          <div class="project-skills__tags">
+            <span class="tag">VS Code</span>
+            <span class="tag">Canva</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Navigateur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-block project-academic">
+        <h2 class="project-section-title">Compétences académiques validées</h2>
+        <p class="project-text">Développement web front-end · Conception UI/UX · Responsive design · Identité visuelle · Gestion de projet · Travail collaboratif</p>
+      </div>
+
+      <div class="project-footer">
+        <div class="project-conclusion">
+          <h2 class="project-section-title">Conclusion réflexive</h2>
+          <p class="project-text project-text--italic">Ce projet m'a permis de développer de nombreuses compétences techniques et créatives en développement web. La création de STRYVE nous a appris à structurer un projet numérique complet, depuis les premières idées jusqu'au développement de l'interface finale. Une première expérience solide en front-end et en conception d'interfaces utilisateur.</p>
+        </div>
+        <div class="project-nav">
+          <a href="project-courtmetrage.html" class="btn btn--outline">← Projet précédent</a>
+          <a href="projects.html" class="btn btn--primary">Tous les projets</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+/* ============================================================
+   PROJECTS.CSS — Page Projets — Ryan Saderne Portfolio
+   ============================================================ */
+
+.page-hero {
+  padding-top: calc(var(--nav-h) + var(--space-2xl));
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero .lead {
+  margin-top: var(--space-md);
+}
+
+/* ── Filtres ── */
+.projects-filter {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+.filter-btn {
+  font-size: var(--size-sm);
+  font-weight: 500;
+  padding: 0.45em 1.2em;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: transparent;
+  transition: all var(--dur-base) var(--ease);
+}
+
+.filter-btn:hover {
+  border-color: var(--border-strong);
+  color: var(--white);
+}
+
+.filter-btn.is-active {
+  background: var(--purple);
+  border-color: var(--purple);
+  color: var(--white);
+}
+
+/* ── Project card ── */
+.project-card__img {
+  aspect-ratio: 16/9;
+}
+
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 20, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--dur-base) var(--ease);
+}
+
+.project-card__link:hover .project-card__overlay {
+  opacity: 1;
+}
+
+.project-card__cta {
+  font-size: var(--size-sm);
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transform: translateY(8px);
+  transition: transform var(--dur-base) var(--ease-spring);
+}
+
+.project-card__link:hover .project-card__cta {
+  transform: translateY(0);
+}
+
+.project-card__body {
+  padding: var(--space-lg);
+}
+
+.project-card__tags {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__title {
+  font-family: var(--font-display);
+  font-size: var(--size-xl);
+  letter-spacing: 0.04em;
+  color: var(--white);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__desc {
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__year {
+  font-size: var(--size-xs);
+  color: var(--text-faint);
+  letter-spacing: 0.06em;
+}
+
+/* Carte "à venir" */
+.project-card--coming {
+  border-style: dashed;
+  opacity: 0.5;
+  cursor: default;
+}
+
+.project-card__body--coming {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-md);
+}
+
+.project-card__coming-icon {
+  font-size: 2rem;
+  color: var(--purple);
+  animation: rotateSlow 8s linear infinite;
+}
+
+/* Éléments filtrés */
+.project-card.is-hidden {
+  display: none;
+}
+
+/* ── Video on hover ── */
+.project-card__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+}
+
+.project-card.is-playing .project-card__video {
+  opacity: 1;
+}
+
+/* Quand la vidéo joue, l'img recule */
+.project-card.is-playing .img-wrap img {
+  opacity: 0;
+}
+
+/* CTA button animation quand vidéo joue */
+.project-card.is-playing .project-card__cta {
+  letter-spacing: 0.12em;
+  color: var(--purple-light);
+}
+
+/* Nav scrolled */
+.nav.is-scrolled {
+  background: rgba(15, 15, 20, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--border);
+}
+
+/* sr-only */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Section itch.io ── */
+.projects-itchio {
+  margin-top: var(--space-3xl);
+  padding: var(--space-2xl) var(--space-xl);
+  border: 1px solid var(--purple-dim);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(123,111,212,0.08) 0%, transparent 60%);
+}
+
+.projects-itchio__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+.projects-itchio__text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.projects-itchio__text .lead {
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.projects-itchio__logo {
+  flex-shrink: 0;
+}
+
+.projects-itchio__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px; height: 80px;
+  background: var(--purple-dim);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: var(--purple-light);
+  border: 1px solid var(--purple);
+}

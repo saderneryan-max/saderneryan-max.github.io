@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Book d'animation 3D de Ryan Saderne — cycles de personnage, scènes animées, modélisation." />
+  <title>Book 3D — Ryan Saderne</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/pages/book.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="page-transition" id="pageTransition"></div>
+
+  <nav class="nav" id="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Ryan<span>.</span></a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html" class="nav__link">Accueil</a></li>
+        <li><a href="about.html" class="nav__link">À propos</a></li>
+        <li><a href="projects.html" class="nav__link">Projets</a></li>
+        <li><a href="book.html" class="nav__link is-active">Book 3D</a></li>
+        <li><a href="skills.html" class="nav__link">Compétences</a></li>
+        <li><a href="cv.html" class="nav__link">CV</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Me contacter</a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav__mobile" id="navMobile" aria-hidden="true">
+    <a href="index.html" class="nav__link" tabindex="-1">Accueil</a>
+    <a href="about.html" class="nav__link" tabindex="-1">À propos</a>
+    <a href="projects.html" class="nav__link" tabindex="-1">Projets</a>
+    <a href="book.html" class="nav__link" tabindex="-1">Book 3D</a>
+    <a href="skills.html" class="nav__link" tabindex="-1">Compétences</a>
+    <a href="cv.html" class="nav__link" tabindex="-1">CV</a>
+    <a href="contact.html" class="nav__link" tabindex="-1">Contact</a>
+  </div>
+
+  <main>
+    <!-- ════ HERO ════ -->
+    <section class="page-hero book-hero" aria-label="En-tête book">
+      <div class="container page-hero__inner">
+        <p class="section-label">Animation 3D</p>
+        <h1 class="display-title">Book d'animation</h1>
+        <div class="divider"></div>
+        <p class="lead">Cycles de personnage, scènes animées et explorations créatives en 3D. Un travail en constante évolution.</p>
+        <div class="book-hero__actions">
+          <a href="assets/book-ryan-saderne.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+            Télécharger le book (PDF)
+          </a>
+          <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+            Voir sur ArtStation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ PIÈCE PRINCIPALE ════ -->
+    <section class="section book-main" aria-labelledby="main-piece-heading">
+      <div class="container">
+        <p class="section-label">Pièce principale</p>
+        <h2 id="main-piece-heading" class="display-title--sm">Scène Scooby-Doo — Cell shading 3D</h2>
+        <div class="divider"></div>
+
+        <div class="book-feature">
+          <div class="book-feature__visual">
+            <div class="img-wrap book-feature__img">
+              <img src="assets/img/book-scoobydoo-render.jpg" alt="Scène animée style Scooby-Doo en cell shading 3D"
+                   onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\' style=\'aspect-ratio:16/9\'>Rendu scène Scooby-Doo — à venir</div>'" />
+            </div>
+          </div>
+          <div class="book-feature__info">
+            <h3 class="book-feature__title">Maison hantée &amp; Mystery Machine</h3>
+            <p class="book-feature__desc">
+              Scène animée inspirée du générique original de Scooby-Doo, réalisée en cell shading 3D sous Blender. Modélisation de la maison hantée, de la Mystery Machine, de la végétation et d'un vieil arbre biscornu.
+            </p>
+            <p class="book-feature__desc">
+              Animation de la caméra, des chauves-souris, de la végétation et du van qui démarre à toute vitesse avec les phares allumés.
+            </p>
+            <div class="book-feature__tools">
+              <span class="badge">Blender</span>
+              <span class="badge">EEVEE</span>
+              <span class="badge">Cell shading</span>
+              <span class="badge">Animation caméra</span>
+            </div>
+            <p class="book-feature__status book-feature__status--wip">En cours de production</p>
+            <a href="project-maison-hantee.html" class="btn btn--outline" style="margin-top:var(--space-md);display:inline-block;">
+              Voir la page du projet →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ GALERIE EXERCICES ════ -->
+    <section class="section book-gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <p class="section-label">Exercices &amp; explorations</p>
+        <h2 id="gallery-heading" class="display-title--sm">Travaux complémentaires</h2>
+        <div class="divider"></div>
+
+        <div class="book-grid">
+
+          <article class="book-item book-item--coming">
+            <div class="book-item__preview">
+              <div class="img-placeholder">Cycle de marche cartoon<br /><span>À venir</span></div>
+            </div>
+            <div class="book-item__info">
+              <h3 class="book-item__title">Cycle de marche cartoon</h3>
+              <p class="book-item__desc">Personnage stylisé — squash &amp; stretch, anticipation, follow-through.</p>
+              <div class="book-item__tags">
+                <span class="tag">Rigging</span><span class="tag">Animation perso.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-item book-item--coming">
+            <div class="book-item__preview">
+              <div class="img-placeholder">Animation physique<br /><span>À venir</span></div>
+            </div>
+            <div class="book-item__info">
+              <h3 class="book-item__title">Objet en chute libre</h3>
+              <p class="book-item__desc">Étude des lois physiques — rebond, écrasement, élasticité.</p>
+              <div class="book-item__tags">
+                <span class="tag">Physics</span><span class="tag">Principes anim.</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-item book-item--coming">
+            <div class="book-item__preview">
+              <div class="img-placeholder">Scène d'ambiance<br /><span>À venir</span></div>
+            </div>
+            <div class="book-item__info">
+              <h3 class="book-item__title">Scène d'ambiance nocturne</h3>
+              <p class="book-item__desc">Éclairage dynamique, particules, environnement atmosphérique.</p>
+              <div class="book-item__tags">
+                <span class="tag">Éclairage</span><span class="tag">Particules</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ LIEN EXTERNE ════ -->
+    <section class="section book-external" aria-labelledby="external-heading">
+      <div class="container">
+        <div class="book-external__inner">
+          <div>
+            <p class="section-label">Retrouvez tous mes travaux</p>
+            <h2 id="external-heading" class="display-title--sm">ArtStation</h2>
+            <p class="lead">L'ensemble de mes créations 3D, rendus et animations est disponible sur mon profil ArtStation.</p>
+          </div>
+          <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="btn btn--primary book-external__btn">
+            Voir mon ArtStation
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__name">Ryan<span>.</span>Saderne</span>
+      <nav class="footer__links" aria-label="Liens externes">
+        <a href="https://www.linkedin.com/in/ryan-saderne" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+        <a href="https://www.artstation.com/ryansaderne6" target="_blank" rel="noopener noreferrer" class="footer__link">ArtStation</a>
+        <a href="https://rays4300.itch.io/" target="_blank" rel="noopener noreferrer" class="footer__link">itch.io</a>
+        <a href="contact.html" class="footer__link">Contact</a>
+        <a href="numerique.html" class="footer__link">Numérique responsable</a>
+      </nav>
+      <p class="footer__copy">© 2025 Ryan Saderne — IUT Clermont Auvergne, Le Puy-en-Velay. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/transitions.js"></script>
+</body>
+</html>
